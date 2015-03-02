@@ -11,4 +11,4 @@ alias be='bundle exec'
 alias bi='bundle install'
 
 # Open Sublime Text with a very short command!
-alias subl=‘subl .'
+alias subl='subl .'
