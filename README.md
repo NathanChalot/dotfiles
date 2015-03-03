@@ -1,8 +1,9 @@
 Install
 -------
 
-Your dotfiles are personal. [Fork this repo](https://github.com/lewagon/dotfiles/fork) on Github,
-and then clone it on your computer.
+**Assumption**: you have [`oh-my-zsh`](http://ohmyz.sh/) is already installed.
+
+Your dotfiles are personal. [Fork this repo](https://github.com/lewagon/dotfiles/fork) on Github, and then clone it on your computer.
 
 ```bash
 # Create a global variable storing
@@ -10,24 +11,24 @@ and then clone it on your computer.
 #
 # e.g.: GITHUB_USERNAME=ssaunier
 #
-$ GITHUB_USERNAME=<put_your_github_username_here>
+$ GITHUB_USERNAME=put_your_github_username_here
+```
 
-# Then execute the 3 following lines without changing anything
+Then execute the 3 following lines **without changing** anything:
+
+```
 $ mkdir -p ~/code/$GITHUB_USERNAME && cd $_
 $ git clone git@github.com:$GITHUB_USERNAME/dotfiles.git
 $ cd dotfiles
 ```
 
-Open the `gitconfig` file with Sublime Text. You can run the
-following to open your Finder:
+Run the `dotfiles` installer:
 
 ```bash
-$ open .
+$ ./install.sh
 ```
 
-Edit & save the `[user]`'s section of the `gitconfig` file.
-
-Save your identity configuration, and push it to GitHub.
+Some files have been updated, you should push this changes back to GitHub.
 
 ```bash
 $ git add gitconfig
@@ -35,20 +36,4 @@ $ git commit --message "My identity for @lewagon in the gitconfig"
 $ git push origin master
 ```
 
-You can review your changes here:
-
-```bash
-$ open https://github.com/$GITHUB_USERNAME/dotfiles
-```
-
-Now you can run the install script. It will not override existing config files, just rename them as ```#{file}.backup```.
-Assumption: you have [`oh-my-zsh`](http://ohmyz.sh/) is already installed.
-
-```bash
-$ ./install.sh
-```
-
-Customization
--------------
-
-You can open `~/.aliases` and add your own shortcuts
+You're all set! Go back to [lewagon/setup](https://github.com/lewagon/setup)

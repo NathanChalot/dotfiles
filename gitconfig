@@ -1,6 +1,4 @@
 [user]
-  name =  "NathanChalot"
-  email = "nathan.chalot@gmail.com"
 
 [color]
   branch = auto
@@ -14,7 +12,7 @@
   remote = yellow
 
 [core]
-	editor = '' -n -w
+  editor = subl -n -w
   pager = less -FRSX
   mergeoptions = --no-edit
 
@@ -48,3 +46,6 @@
 
 [push]
 	default = simple
+[user]
+	email = nathan.chalot@gmail.com
+	name = NathanChalot
